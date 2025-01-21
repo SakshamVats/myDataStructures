@@ -1,5 +1,6 @@
 #include "myArray.h"
 #include "myStack.h"
+#include "myQueue.h"
 
 void testArray()
 {
@@ -47,9 +48,29 @@ void testStack()
 	sakshamsStack.print();
 }
 
+void testQueue()
+{
+	IntQueue sakshamsQueue{};
+
+	sakshamsQueue.enqueue(2050);
+	sakshamsQueue.enqueue(2003);
+	sakshamsQueue.enqueue(11);
+	sakshamsQueue.enqueue(15);
+
+	sakshamsQueue.print();
+
+	std::cout << "The size of the queue is: " << sakshamsQueue.size() << '\n';
+
+	std::cout << "Dequeuing element: " << sakshamsQueue.dequeue() << '\n';
+
+	std::cout << "The size of the queue is: " << sakshamsQueue.size() << '\n';
+
+	sakshamsQueue.print();
+}
+
 int main()
 {
-	testStack();
+	testQueue();
 
 	return 0;
 }

@@ -7,3 +7,4 @@
  Data Structures added so far:
  1. Array (implemented using std::vector)
  2. Stack (implemented using std::vector)
+ 3. Queue (implemented using std::vector)
