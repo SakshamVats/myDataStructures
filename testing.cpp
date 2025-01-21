@@ -1,4 +1,5 @@
 #include "myArray.h"
+#include "myStack.h"
 
 void testArray()
 {
@@ -26,9 +27,29 @@ void testArray()
 	sakshamsArray.printAll();
 }
 
+void testStack()
+{
+	IntStack sakshamsStack{};
+
+	sakshamsStack.push(15);
+	sakshamsStack.push(11);
+	sakshamsStack.push(2003);
+	sakshamsStack.push(2050);
+
+	sakshamsStack.print();
+
+	std::cout << "The size of the stack is: " << sakshamsStack.size() << '\n';
+
+	std::cout << "Popping element: " << sakshamsStack.pop() << '\n';
+
+	std::cout << "The size of the stack is: " << sakshamsStack.size() << '\n';
+
+	sakshamsStack.print();
+}
+
 int main()
 {
-	testArray();
+	testStack();
 
 	return 0;
 }
