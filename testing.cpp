@@ -1,6 +1,19 @@
 #include "myArray.h"
 #include "myStack.h"
 #include "myQueue.h"
+#include "myLinkedList.h"
+
+void testArray();
+void testStack();
+void testQueue();
+void testLinkedList();
+
+int main()
+{
+	testLinkedList();
+
+	return 0;
+}
 
 void testArray()
 {
@@ -68,9 +81,27 @@ void testQueue()
 	sakshamsQueue.print();
 }
 
-int main()
+void testLinkedList()
 {
-	testQueue();
+	IntLinkedList sakshamsLL{};
 
-	return 0;
+	sakshamsLL.print();
+
+	sakshamsLL.insertAtHead(2003);
+	sakshamsLL.insertAtHead(11);
+	sakshamsLL.insertAtHead(15);
+
+	std::cout << "The size of the linked list is: " << sakshamsLL.size() << '\n';
+	sakshamsLL.print();
+
+	sakshamsLL.insertAtTail(2050);
+
+	std::cout << "The size of the linked list is: " << sakshamsLL.size() << '\n';
+	sakshamsLL.print();
+
+	std::cout << "Searching for 15: Found at index " << sakshamsLL.search(15) << '\n';
+
+	sakshamsLL.deleteIndex(sakshamsLL.search(15));
+	std::cout << "The size of the linked list is: " << sakshamsLL.size() << '\n';
+	sakshamsLL.print();
 }
