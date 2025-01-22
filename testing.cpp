@@ -2,15 +2,17 @@
 #include "myStack.h"
 #include "myQueue.h"
 #include "myLinkedList.h"
+#include "myDoublyLinkedList.h"
 
 void testArray();
 void testStack();
 void testQueue();
 void testLinkedList();
+void testDoublyLinkedList();
 
 int main()
 {
-	testLinkedList();
+	testDoublyLinkedList();
 
 	return 0;
 }
@@ -104,4 +106,29 @@ void testLinkedList()
 	sakshamsLL.deleteIndex(sakshamsLL.search(15));
 	std::cout << "The size of the linked list is: " << sakshamsLL.size() << '\n';
 	sakshamsLL.print();
+}
+
+void testDoublyLinkedList()
+{
+	IntDoublyLinkedList sakshamsDLL{};
+
+	sakshamsDLL.print();
+
+	sakshamsDLL.insertAtHead(2003);
+	sakshamsDLL.insertAtHead(11);
+	sakshamsDLL.insertAtHead(15);
+
+	std::cout << "The size of the linked list is: " << sakshamsDLL.size() << '\n';
+	sakshamsDLL.print();
+
+	sakshamsDLL.insertAtTail(2050);
+
+	std::cout << "The size of the linked list is: " << sakshamsDLL.size() << '\n';
+	sakshamsDLL.print();
+
+	std::cout << "Searching for 15: Found at index " << sakshamsDLL.search(15) << '\n';
+
+	sakshamsDLL.deleteIndex(sakshamsDLL.search(15));
+	std::cout << "The size of the linked list is: " << sakshamsDLL.size() << '\n';
+	sakshamsDLL.print();
 }
