@@ -3,16 +3,18 @@
 #include "myQueue.h"
 #include "myLinkedList.h"
 #include "myDoublyLinkedList.h"
+#include "myBinarySearchTree.h"
 
 void testArray();
 void testStack();
 void testQueue();
 void testLinkedList();
 void testDoublyLinkedList();
+void testBinarySearchTree();
 
 int main()
 {
-	testDoublyLinkedList();
+	testBinarySearchTree();
 
 	return 0;
 }
@@ -131,4 +133,24 @@ void testDoublyLinkedList()
 	sakshamsDLL.deleteIndex(sakshamsDLL.search(15));
 	std::cout << "The size of the linked list is: " << sakshamsDLL.size() << '\n';
 	sakshamsDLL.print();
+}
+
+void testBinarySearchTree()
+{
+	BinarySearchTree sakshamsBST{};
+
+	sakshamsBST.addNode(15);
+	sakshamsBST.addNode(11);
+	sakshamsBST.addNode(2003);
+	sakshamsBST.addNode(2050);
+
+	sakshamsBST.printTreeInOrder(sakshamsBST.getRootNode());
+	std::cout << '\n';
+
+	sakshamsBST.deleteValue(sakshamsBST.getRootNode(), 2050);
+
+	sakshamsBST.printTreeInOrder(sakshamsBST.getRootNode());
+	std::cout << '\n';
+
+	std::cout << sakshamsBST.search(15);
 }
