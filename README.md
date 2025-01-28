@@ -8,5 +8,6 @@
  1. Array 						(implemented using std::vector)
  2. Stack 						(implemented using std::vector)
  3. Queue 						(implemented using std::vector)
- 4. Linked List 				(implemented using pointers)
+ 4. Linked List 				      (implemented using pointers)
  5. Doubly Linked List 			(implemented using pointers)
+ 6. Binary Search Tree    (implemented using pointers)
