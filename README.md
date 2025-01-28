@@ -11,3 +11,4 @@
  4. Linked List 				      (implemented using pointers)
  5. Doubly Linked List 			(implemented using pointers)
  6. Binary Search Tree    (implemented using pointers)
+ 7. AVL Tree              (implemented using pointers)
