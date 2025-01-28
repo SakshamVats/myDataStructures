@@ -4,6 +4,7 @@
 #include "myLinkedList.h"
 #include "myDoublyLinkedList.h"
 #include "myBinarySearchTree.h"
+#include "myAVLTree.h"
 
 void testArray();
 void testStack();
@@ -11,10 +12,11 @@ void testQueue();
 void testLinkedList();
 void testDoublyLinkedList();
 void testBinarySearchTree();
+void testAVLTree();
 
 int main()
 {
-	testBinarySearchTree();
+	testAVLTree();
 
 	return 0;
 }
@@ -153,4 +155,24 @@ void testBinarySearchTree()
 	std::cout << '\n';
 
 	std::cout << sakshamsBST.search(15);
+}
+
+void testAVLTree()
+{
+	AVLTree sakshamsAVL{};
+
+	sakshamsAVL.insert(15);
+	sakshamsAVL.insert(11);
+	sakshamsAVL.insert(2003);
+	sakshamsAVL.insert(2050);
+
+	std::cout << "In-order traversal after inserts: ";
+	sakshamsAVL.display();
+
+	sakshamsAVL.remove(2050);
+	std::cout << "In-order traversal after deleting 2050: ";
+	sakshamsAVL.display();
+
+	std::cout << "Searching for 15: " << (sakshamsAVL.find(15) ? "Found" : "Not Found") << '\n';
+	std::cout << "Searching for 2003: " << (sakshamsAVL.find(2050) ? "Found" : "Not Found") << '\n';
 }
