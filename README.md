@@ -12,3 +12,4 @@
  5. Doubly Linked List 			(implemented using pointers)
  6. Binary Search Tree    (implemented using pointers)
  7. AVL Tree              (implemented using pointers)
+ 8. Graph - Adjacency List          (implemented using myLinkedList.h)
