@@ -5,6 +5,7 @@
 #include "myDoublyLinkedList.h"
 #include "myBinarySearchTree.h"
 #include "myAVLTree.h"
+#include "myGraph.h"
 
 void testArray();
 void testStack();
@@ -13,10 +14,11 @@ void testLinkedList();
 void testDoublyLinkedList();
 void testBinarySearchTree();
 void testAVLTree();
+void testGraph();
 
 int main()
 {
-	testAVLTree();
+	testGraph();
 
 	return 0;
 }
@@ -175,4 +177,15 @@ void testAVLTree()
 
 	std::cout << "Searching for 15: " << (sakshamsAVL.find(15) ? "Found" : "Not Found") << '\n';
 	std::cout << "Searching for 2003: " << (sakshamsAVL.find(2050) ? "Found" : "Not Found") << '\n';
+}
+
+void testGraph()
+{
+	Graph sakshamsGraph{5};
+
+	sakshamsGraph.addEdge(1, 5);
+	sakshamsGraph.addEdge(1, 2);
+	sakshamsGraph.addEdge(2, 3);
+
+	sakshamsGraph.printGraph();
 }
