@@ -15,6 +15,16 @@ private:
 	int m_size{0};
 
 public:
+	~IntLinkedList()
+	{
+		while (m_head)
+		{
+			IntNode* temp = m_head;
+			m_head = m_head->next;
+			delete temp;
+		}
+	}
+
 	int size()
 	{
 		return m_size;

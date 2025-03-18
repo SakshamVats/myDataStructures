@@ -1,11 +1,11 @@
-#include "myArray.h"
-#include "myStack.h"
-#include "myQueue.h"
-#include "myLinkedList.h"
-#include "myDoublyLinkedList.h"
-#include "myBinarySearchTree.h"
-#include "myAVLTree.h"
-#include "myGraph.h"
+#include "includes/myArray.h"
+#include "includes/myStack.h"
+#include "includes/myQueue.h"
+#include "includes/myLinkedList.h"
+#include "includes/myDoublyLinkedList.h"
+#include "includes/myBinarySearchTree.h"
+#include "includes/myAVLTree.h"
+#include "includes/myGraph.h"
 
 void testArray();
 void testStack();

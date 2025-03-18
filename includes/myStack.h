@@ -27,7 +27,7 @@ public:
 
 	int pop()
 	{
-		assert(!isEmpty() && "Cannot remove from empty stack!");
+		assert(!isEmpty() && "Cannot remove from empty stack!\n");
 
 		int element = m_stack.back();
 		m_stack.pop_back();
