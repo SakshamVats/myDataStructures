@@ -1,15 +1,40 @@
-# myDataStructures
- My implementation and testing of various data structures.
- 
- Data structures are implemented in respective header and cpp files.
- Then, they are tested in testing.cpp.
- 
- Data Structures added so far:
- 1. Array 						(implemented using std::vector)
- 2. Stack 						(implemented using std::vector)
- 3. Queue 						(implemented using std::vector)
- 4. Linked List 				      (implemented using pointers)
- 5. Doubly Linked List 			(implemented using pointers)
- 6. Binary Search Tree    (implemented using pointers)
- 7. AVL Tree              (implemented using pointers)
- 8. Graph - Adjacency List          (implemented using myLinkedList.h)
+# 📦 myDataStructures  
+
+🛠️ A collection of fundamental **data structures**, implemented from scratch in **C++**. Each data structure includes its **implementation** and **testing** to ensure correctness and efficiency.  
+
+---
+
+## 📂 Project Structure  
+- **Data structures** are implemented in their respective **header (.h) and source (.cpp) files**.  
+- **Testing** is done in `testing.cpp`.  
+
+---
+
+## 📌 Implemented Data Structures  
+
+### 📊 Linear Data Structures  
+- ✅ **Array** (implemented using `std::vector`)  
+- ✅ **Stack** (implemented using `std::vector`)  
+- ✅ **Queue** (implemented using `std::vector`)  
+
+### 🔗 Linked Lists  
+- ✅ **Singly Linked List** (implemented using pointers)  
+- ✅ **Doubly Linked List** (implemented using pointers)  
+
+### 🌳 Trees  
+- ✅ **Binary Search Tree (BST)** (implemented using pointers)  
+- ✅ **AVL Tree** (implemented using pointers)  
+
+### 🔗 Graphs  
+- ✅ **Graph (Adjacency List)** (implemented using `myLinkedList.h`)  
+
+---
+
+## 🛠️ Installation & Usage  
+
+1. **Clone the repository**  
+   ```sh
+   git clone https://github.com/yourusername/myDataStructures.git
+   cd myDataStructures
+
+🌟 If you find this project useful, consider giving it a ⭐ Star on GitHub!
