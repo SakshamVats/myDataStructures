@@ -50,12 +50,12 @@ public:
 		}
 	}
 
-	std::vector<IntLinkedList>& getAdjList()
+	const std::vector<IntLinkedList>& getAdjList() const
 	{
 		return adjList;
 	}
 
-	int getVertices()
+	const int getVertices() const
 	{
 		return m_vertices;
 	}
@@ -115,12 +115,12 @@ public:
 		}
 	}
 
-	std::vector<WeightedIntLinkedList>& getAdjList()
+	const std::vector<WeightedIntLinkedList>& getAdjList() const
 	{
 		return adjList;
 	}
 
-	int getVertices()
+	const int getVertices() const
 	{
 		return m_vertices;
 	}

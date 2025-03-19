@@ -25,7 +25,7 @@ public:
 		}
 	}
 
-	int size()
+	int size() const
 	{
 		return m_size;
 	}
@@ -109,7 +109,7 @@ public:
 		return -1;
 	}
 
-	void print()
+	void print() const
 	{
 		if (!m_size)
 		{
@@ -128,7 +128,7 @@ public:
 		std::cout << "null\n";
 	}
 
-	IntNode* getHead()
+	IntNode* getHead() const
 	{
 		return m_head;
 	}
@@ -190,7 +190,7 @@ public:
 		++m_size;
 	}
 
-	void print()
+	void print() const
 	{
 		WeightedIntNode* curr{ m_head };
 
@@ -203,12 +203,12 @@ public:
 		std::cout << "null\n";
 	}
 
-	WeightedIntNode* getHead()
+	WeightedIntNode* getHead() const
 	{
 		return m_head;
 	}
 
-	int size()
+	int size() const
 	{
 		return m_size;
 	}
