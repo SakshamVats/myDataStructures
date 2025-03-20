@@ -10,35 +10,9 @@ private:
 	std::vector<int> m_stack{};
 
 public:
-	int size()
-	{
-		return static_cast<int>(m_stack.size());
-	}
-
-	bool isEmpty()
-	{
-		return static_cast<bool>(!m_stack.size());
-	}
-
-	void push(int element)
-	{
-		m_stack.push_back(element);
-	}
-
-	int pop()
-	{
-		assert(!isEmpty() && "Cannot remove from empty stack!\n");
-
-		int element = m_stack.back();
-		m_stack.pop_back();
-		return element;
-	}
-
-	void print()
-	{
-		std::cout << "-\n";
-		for (int element : m_stack)
-			std::cout << element << '\n';
-		std::cout << "-\n";
-	}
+	int size();
+	bool isEmpty();
+	void push(int element);
+	int pop();
+	void print();
 };
