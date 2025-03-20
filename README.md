@@ -28,6 +28,8 @@
 ### 🔗 Graphs  
 - ✅ **Graph (Adjacency List)** (implemented using `myLinkedList.h`)  
 
+### 📊 Hash Tables  
+- ✅ **Hash Table** (implemented using `myLinkedList.h`)  
 ---
 
 ## 🛠️ Installation & Usage  

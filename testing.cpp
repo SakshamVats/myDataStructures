@@ -6,6 +6,7 @@
 #include "includes/myBinarySearchTree.h"
 #include "includes/myAVLTree.h"
 #include "includes/myGraph.h"
+#include "includes/myHashTable.h"
 
 void testArray();
 void testStack();
@@ -15,10 +16,11 @@ void testDoublyLinkedList();
 void testBinarySearchTree();
 void testAVLTree();
 void testGraph();
+void testHashTable();
 
 int main()
 {
-	testGraph();
+	testHashTable();
 
 	return 0;
 }
@@ -188,4 +190,14 @@ void testGraph()
 	sakshamsGraph.addEdge(2, 3);
 
 	sakshamsGraph.printGraph();
+}
+
+void testHashTable()
+{
+	HashTable sakshamsHT{};
+	sakshamsHT.insert(2, 15);
+	sakshamsHT.insert(13, 11);
+	sakshamsHT.insert(7, 2003);
+
+	sakshamsHT.print();
 }

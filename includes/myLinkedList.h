@@ -190,6 +190,46 @@ public:
 		++m_size;
 	}
 
+	void remove(int vertex) 
+	{
+		WeightedIntNode* curr{ m_head };
+		WeightedIntNode* prev{ nullptr };
+
+		while (curr) 
+		{
+			if (curr->vertex == vertex) 
+			{
+				if (prev)
+					prev->next = curr->next;
+
+				else
+					m_head = curr->next;
+
+				delete curr;
+				--m_size;
+
+				return;
+			}
+
+			prev = curr;
+			curr = curr->next;
+		}
+	}
+
+	int search(int vertex) 
+	{
+		WeightedIntNode* curr{ m_head };
+		while (curr) 
+		{
+			if (curr->vertex == vertex)
+				return curr->weight;
+
+			curr = curr->next;
+		}
+
+		return -1;
+	}
+
 	void print() const
 	{
 		WeightedIntNode* curr{ m_head };
